@@ -29,7 +29,9 @@ class CodeBytechButton extends StatelessWidget {
           color: color ?? const Color.fromARGB(255, 51, 94, 247),
           borderRadius: BorderRadius.circular(40),
         ),
-        child: child,
+        child: Center(
+          child: child,
+        ),
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       ),
     );
