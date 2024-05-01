@@ -28,6 +28,14 @@ class CodeBytechButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: color ?? const Color.fromARGB(255, 51, 94, 247),
           borderRadius: BorderRadius.circular(40),
+          boxShadow: [
+            BoxShadow(
+              color: color!.withOpacity(0.2) ?? const Color.fromARGB(255, 51, 94, 247).withOpacity(0.2),
+              spreadRadius: 20,
+              blurRadius: 10,
+
+            ),
+          ],
         ),
         child: Center(
           child: child,
