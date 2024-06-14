@@ -32,6 +32,7 @@ class _RateDialogState extends State<RateDialog> {
 
   @override
   Widget build(BuildContext context) {
+     ToastContext().init(context);
     return AlertDialog(
       title: Center(
         child: Text(
